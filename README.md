@@ -42,16 +42,22 @@ Further we will need the python packages/modules:
 
 ## Installing
 We propose to install python via anaconda.
+
 1) [Install Anaconda](https://docs.anaconda.com/anaconda/install/) and read the [Anaconda tutorial (20min)](https://conda.io/docs/user-guide/getting-started.html)
 
 2) Create a new environment: ```conda create --name DLenv python=3.6```
-3) Activate the new environment
+
+3) Activate the new conda environment (for conda 4.6 and later versions)
+    * Windows: ```conda activate DLenv```
+    * Linux and macOS: ```conda activate DLenv```
+    
+    For versions prior to conda 4.6, use:
     * Windows: ```activate DLenv```
-    * Linux and macOS: ```source activate DLenv```
+    * Linux, macOS: ```source activate DLenv```
     
     --> now your terminal prompt should start with ***(DLenv)*** 
-4) Install the following packages in your activated DLenv:
     
+4) Install the following packages in your activated DLenv:
     ```
     conda install jupyter
     conda install scikit-learn
@@ -61,17 +67,18 @@ We propose to install python via anaconda.
     
 5) Install tensorflow with pip in the activated anaconda environment (DLenv).
 
-For example install the current stable release for *CPU-only*:
-```
-pip install tensorflow
-```
+    For example install the current stable release for *CPU-only*:
+    ```
+    pip install tensorflow
+    ```
 
-Alternatively, install tensorflow with *GPU support* using: `tensorflow-gpu`. For the GPU version you might have to follow the [official tensorflow installation instructions](https://www.tensorflow.org/install/pip)
-or check the [anaconda installation instructions](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html).
-
+    Alternatively, install tensorflow with *GPU support* using: `tensorflow-gpu`. For the GPU version you might have to follow the [official tensorflow installation instructions](https://www.tensorflow.org/install/pip)
+    or check the [anaconda installation instructions](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html).
+    
 
 ## Verify your installation
-1. In the activated DLenv type ```which jupyter```. This should point to the python installation in your conda env e.g. ```/username/anaconda3/envs/DL_tutorial/bin/jupyter```
+1. In the activated DLenv type ```which jupyter```. This should point to the python installation in your conda env e.g. 
+```/username/anaconda3/envs/DLenv/bin/jupyter```
 
 2. Open a terminal and go to the location of the file: `installation_check.ipynb`
 
