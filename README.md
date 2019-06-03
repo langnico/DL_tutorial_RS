@@ -59,8 +59,15 @@ We propose to install python via anaconda.
     conda install keras
     ```
     
-5) Install tensorflow following the:
-[official installation instructions](https://www.tensorflow.org/install/)
+5) Install tensorflow with pip in the activated anaconda environment (DLenv).
+
+For example install the current stable release for *CPU-only*:
+```
+pip install tensorflow
+```
+
+Alternatively, install tensorflow with *GPU support* using: `tensorflow-gpu`. For the GPU version you might have to follow the [official tensorflow installation instructions](https://www.tensorflow.org/install/pip)
+or check the [anaconda installation instructions](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html).
 
 
 ## Verify your installation
